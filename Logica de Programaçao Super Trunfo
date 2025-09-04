@@ -1,0 +1,64 @@
+# Lógica de Programação - Super Trunfo em C
+
+## Objetivo do Projeto
+
+Simular o jogo Super Trunfo usando cartas de países, permitindo que o jogador escolha duas cartas e compare atributos para determinar o vencedor.
+
+## Estrutura de Dados
+
+* `struct Carta` com os seguintes campos:
+
+  * `nome` (char\[30])
+  * `populacao` (int)
+  * `area` (float)
+  * `pib` (float)
+  * `pontosTuristicos` (int)
+  * `densidade` (float, calculada como populacao / area)
+
+## Passo a Passo da Lógica
+
+1. **Inicialização das Cartas**
+
+   * Criar um array com 4 cartas pré-definidas: Brasil, Japão, EUA e França.
+   * Calcular a densidade para cada carta.
+
+2. **Escolha das Cartas**
+
+   * Exibir menu com as cartas.
+   * Jogador escolhe duas cartas diferentes.
+   * Validar a escolha (1 a 4 e cartas diferentes).
+
+3. **Escolha dos Atributos**
+
+   * Exibir menu de atributos.
+   * Jogador escolhe dois atributos diferentes.
+   * Validar escolhas.
+
+4. **Comparação dos Atributos**
+
+   * Para cada atributo, comparar os valores das cartas:
+
+     * Atributos normais: maior valor vence.
+     * Densidade demográfica: menor valor vence.
+   * Determinar vencedor parcial de cada atributo.
+
+5. **Soma dos Atributos**
+
+   * Somar os valores dos atributos escolhidos para cada carta.
+   * Determinar vencedor final com base na soma.
+
+6. **Exibição do Resultado**
+
+   * Mostrar cartas escolhidas.
+   * Mostrar vencedor de cada atributo.
+   * Mostrar soma final e vencedor do jogo.
+   * Caso empate, informar empate.
+
+7. **Finalização**
+
+   * Esperar o jogador pressionar ENTER antes de fechar o console, garantindo que o resultado seja visto.
+
+## Observações
+
+* O jogo é para aprendizado de lógica de programação e manipulação de structs em C.
+* Pode ser expandido futuramente com mais cartas, modo automático ou interface gráfica simples.
